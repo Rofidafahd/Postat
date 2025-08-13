@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #2e003e, #5b0060) no-repeat;
+    max-width: 100svw;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    outline: none;
+}
+header{
+    text-align: center;
+    width: 100%;
+}
+header input{
+    width: 60%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 20px;
+    font-size: 17px;
+}
+header input:focus {
+    box-shadow: 0 0 8px white;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    padding: 20px;
+}
+/* Post Card Styles */
+.post-card {
+    background: rgba(255, 255, 255, 0.756);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+}
+.post-card h3 {
+    margin-bottom: 10px;
+}
+.tags {
+    margin: 10px 0;
+}
+.tags p {
+    display: inline-block;
+    background: rgba(152, 237, 152, 0.523);
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 5px;
+}
+.stats {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    padding: 10px 0px;
+}
+.stats p {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.stats .views {
+    color: #052649;
+}
+.stats .likes {
+    color: rgb(224, 51, 51);
+}
+/* categories */
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.categories p {
+    background: rgba(192, 114, 174, 0.811);
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+.categories p:hover {
+    background: rgba(255, 255, 255, 0.8);
+    transform: scale(1.05);
+}
